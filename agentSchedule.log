@@ -1,0 +1,15 @@
+2018-12-04 08:41:51,192 ERROR [main] org.springframework.boot.context.logging.LoggingApplicationListener : Cannot set level: ALL for 'br.com.agent.agentschedule'
+2018-12-04 08:41:51,863 INFO  [main] br.com.agent.agentschedule.AgentScheduleApplication : Starting AgentScheduleApplication on user-PC with PID 14164 (C:\cristian\agent-schedule\target\classes started by user in C:\cristian\agent-schedule)
+2018-12-04 08:41:51,865 INFO  [main] br.com.agent.agentschedule.AgentScheduleApplication : No active profile set, falling back to default profiles: default
+2018-12-04 08:41:55,675 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Initializing ExecutorService 'taskScheduler'
+2018-12-04 08:41:55,787 INFO  [main] br.com.agent.agentschedule.AgentScheduleApplication : Started AgentScheduleApplication in 7.317 seconds (JVM running for 11.847)
+2018-12-04 08:42:00,001 INFO  [scheduling-1] br.com.agent.agentschedule.AgentJob : *****************************************************
+2018-12-04 08:42:00,066 INFO  [scheduling-1] br.com.agent.agentschedule.AgentJob : Starting => Agent Schedule => 2018-12-04T08:42:00.066
+2018-12-04 08:42:00,100 INFO  [scheduling-1] br.com.agent.agentschedule.AgentJob : Starting => Exec batFile => 2018-12-04T08:42:00.100
+2018-12-04 08:42:00,100 INFO  [scheduling-1] br.com.agent.agentschedule.AgentJob : Path =>  batFile => C:\cristian\configuration.bat
+2018-12-04 08:42:01,212 INFO  [scheduling-1] br.com.agent.agentschedule.AgentJob : Finish => Agent Schedule => 2018-12-04T08:42:01.212
+2018-12-04 08:42:01,213 INFO  [scheduling-1] br.com.agent.agentschedule.AgentJob : Upload => Google Driver
+2018-12-04 08:42:08,011 WARN  [scheduling-1] com.google.api.client.util.store.FileDataStoreFactory : unable to change permissions for everybody: C:\Users\user\GoogleDriveCredentialsOAUTH
+2018-12-04 08:42:08,012 WARN  [scheduling-1] com.google.api.client.util.store.FileDataStoreFactory : unable to change permissions for owner: C:\Users\user\GoogleDriveCredentialsOAUTH
+2018-12-04 08:42:10,696 INFO  [scheduling-1] br.com.agent.agentschedule.AgentJob : Created folder name    => agentSchedule-2018-12-04T08:42:01.214
+2018-12-04 08:42:14,511 INFO  [scheduling-1] br.com.agent.agentschedule.AgentJob : Upload Ok              => Created Google file

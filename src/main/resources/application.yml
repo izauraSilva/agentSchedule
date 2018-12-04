@@ -1,0 +1,47 @@
+agentScheduleJob:
+  #cron: 0 0 8,10 * * *
+  cron: 00 0/1 * * * ?
+  #cron: 0 0/42 22 * * *
+
+#caminho arquivo .bat e arquivo txt resposta execução .bat
+directory:
+  directoryFileConfig: C:\\cristian
+  directoryReturnConfig: C:\\cristian
+
+#nome arquivo .bat e arquivo txt resposta execução .bat
+archive:
+  batFile: configuration.bat
+  fileReturn: returnConfiguration.txt
+
+#Google Driver API - credentials
+driveQuickStart:
+  #applicationName: Drive API Agent Schedule
+  #clientSecretFileName: client_secret.json
+  #credentials: credentials
+  #credentialsFolder: C:\\cristian\\googleDriveCredentialsOAUTH
+  nameDefaultFolder: agentSchedule
+
+#Log
+logging:
+  directory: C:\\cristian\\logs
+  file: agentSchedule.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    br.com.agent.agentschedule: ALL
+
+mail:
+  host: smtp.gmail.com
+  port: 587
+  protocol: smtp
+  username: agent.sched.up@gmail.com
+  password: Agentest18
+  properties:
+    mail:
+      smtp:
+        auth: true
+        starttls:
+          enable: true
+          required: true
+quitwait: false
